@@ -1,0 +1,307 @@
+/* header */
+
+.logo {
+    width: 100px;
+}
+
+
+.header {
+    border-top: 10px solid gold;
+    background-color: gainsboro;
+
+}
+
+.fuentesNav {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carrito {
+    width: 40px;
+    border-radius: 10px;
+}
+
+.fuentesNav a:hover {
+    background-color: gold;
+}
+
+
+/* Main */
+
+.tituloH1 {
+    background-color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 3px 0px;
+    padding: 50px;
+
+}
+
+/* Categorias */
+
+.contenedorSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedorCategorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+}
+
+.categoriasImg {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.categoriasP {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.precios {
+    color:red;
+    font-weight: bolder;
+}
+
+
+/* DESAYUNOS Y MERIENDAS */
+
+.sectionH2 {
+    background-color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 50px;
+}
+
+.sectionH3 {
+    background-color: #784212;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* ALMUERZO Y CENAS */
+.divAlmuerzo {
+    background-color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 50px;
+    margin-top: 135px;
+}
+
+.divTumomento {
+    background-color: #784212;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* iframe */
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+
+
+/* Estilo Tiendas*/
+
+.tituloTiendas {
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    text-align: center;
+    background-color: gold;
+    text-transform: uppercase;
+}
+
+.divLocales {
+    border: 2px solid black;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.divTiendas {
+    background-color: aquamarine;
+    border-top: 10px solid gold;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.divPickup {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+}
+
+.olPickup {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ulPickup {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    list-style: none;
+}
+
+
+/* Estilo Formulario */
+
+.divTituloFormulario {
+    padding: 20px;
+    margin-top: 150px;
+    text-align: center;
+    background-color: gold;
+    text-transform: uppercase;
+}
+
+form {
+
+    background-color: #EBEAE9;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.btnFormulario {
+    background-color: aliceblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+}
+
+/* ESTILO NUESTRA APP */
+
+.divApp {
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    text-align: center;
+    background-color: gold;
+    text-transform: uppercase;
+    border-bottom: 5px solid gray;
+}
+
+
+
+.Whastapp {
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* ESTILO FOOTER */
+
+footer {
+    border-top: 5px solid gold;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+li {
+
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.imgFooter {
+    height: 60px;
+}
+
+/* .categoriasImg {
+    max-width: 100%;
+} */
+
+/* RESPONSIVE home Categorias*/
+
+
+@media (max-width:768px) {
+
+    .contenedorSection {
+        
+        grid-template-columns: 1fr 1fr   ;
+    
+    }
+}
+
+@media (max-width:500px) {
+
+    .contenedorSection {
+        
+        grid-template-columns: 1fr ;
+    
+    }
+}
+
+/* RESPONSIVE Tiendas*/
+
+
+@media (max-width:500px){
+    .divPickup img {
+        display: none;
+
+    } 
+}
