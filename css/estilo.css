@@ -26,6 +26,9 @@
     background-color: gold;
 }
 
+/* body {
+    overflow-x: hidden;
+} */
 
 /* Main */
 
@@ -194,12 +197,14 @@ span {
 }
 
 form {
+    display: flex;
+    justify-content: center;
 
     background-color: #EBEAE9;
 }
 
 label {
-    display: block;
+
     font-weight: bold;
     margin-bottom: 5px;
     color: black;
@@ -209,13 +214,31 @@ label {
 
 input,
 textarea {
+    width: 400px;
     display: block;
-    width: 100%;
     padding: 10px;
     border: 2px solid black;
     border-radius: 5px;
     font-size: 10px;
     margin-bottom: 10px;
+}
+
+.divFormulario {
+    
+    width: 500px;
+    border: 3px solid black;
+    margin: 50px;
+    padding: 20px;
+
+}
+.tituloFormulario{
+    border-bottom: 3px solid black;
+    
+}
+
+.olvido{
+    display: flex;
+    justify-content: space-around;
 }
 
 .btnFormulario {
@@ -228,7 +251,6 @@ textarea {
     margin-top: 20px;
     display: block;
 }
-
 /* ESTILO NUESTRA APP */
 
 .divApp {
@@ -258,7 +280,9 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     margin-top: 30px;
+    
 }
+
 
 
 li {
