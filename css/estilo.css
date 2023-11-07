@@ -32,8 +32,14 @@
 
 /* Main */
 
+/* Banner home */
+
+.carousel {
+    margin-top: 130px;
+}
+
 .tituloH1 {
-    background-color: aquamarine;
+    background-color: rgb(217, 247, 237);
     text-align: center;
     font-weight: bold;
     font-size: 30px;
@@ -46,7 +52,7 @@
 
 .contenedorSection {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
 }
@@ -78,7 +84,7 @@
 }
 
 .precios {
-    color:red;
+    color: red;
     font-weight: bolder;
 }
 
@@ -88,7 +94,7 @@
 
 
 .sectionH2 {
-    background-color: aquamarine;
+    background-color: rgb(217, 247, 237);
     text-align: center;
     font-weight: bold;
     font-size: 30px;
@@ -106,7 +112,7 @@
 
 /* ALMUERZO Y CENAS */
 .divAlmuerzo {
-    background-color: aquamarine;
+    background-color: rgb(217, 247, 237);
     text-align: center;
     font-weight: bold;
     font-size: 30px;
@@ -156,7 +162,7 @@ span {
 }
 
 .divTiendas {
-    background-color: aquamarine;
+    background-color: rgb(217, 247, 237);
     border-top: 10px solid gold;
     padding: 30px;
     text-align: center;
@@ -198,26 +204,31 @@ span {
     text-transform: uppercase;
 }
 
-form {
-    display: flex;
-    justify-content: center;
+.divFormulario {
+    display: inline-block;
+    width: 500px;
+    border: 3px solid black;
+    margin: 50px;
+    padding: 20px;
 
-    background-color: #EBEAE9;
 }
+
+.tituloFormulario {
+    text-align: center;
+    border-bottom: 5px;
+}
+
 
 label {
 
     font-weight: bold;
     margin-bottom: 5px;
     color: black;
-    
+
 }
 
-
-
 input {
-    width: 400px;
-    display: block;
+    width: 100%;
     padding: 10px;
     border: 2px solid black;
     border-radius: 5px;
@@ -225,38 +236,28 @@ input {
     margin-bottom: 10px;
 }
 
-.divFormulario {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    width: 500px;
-    border: 3px solid black;
-    margin: 50px;
-    padding: 20px;
-    
 
-}
-.tituloFormulario{
+.tituloFormulario {
     border-bottom: 3px solid black;
-    
+
 }
 
-.olvido{
+.olvido {
     display: flex;
     justify-content: space-around;
 }
 
 .btnFormulario {
-    background-color: aliceblue;
+    background-color: gold;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
     margin-top: 20px;
-    display: block;
+
 }
+
 /* ESTILO NUESTRA APP */
 
 .divApp {
@@ -281,14 +282,20 @@ input {
 /* ESTILO FOOTER */
 
 footer {
-    border-top: 5px solid gold;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 5px solid gold;
     text-align: center;
     margin-top: 30px;
-    
+
 }
 
+.divFooter {
+    display: flex;
+    justify-content: start;
+    display: block;
+    margin-top: 5px;
+}
 
 
 li {
@@ -297,8 +304,17 @@ li {
     cursor: pointer;
 }
 
+.footerLi li {
+    display: inline-block;
+}
+
+/* redes sociales */
 .imgFooter {
-    height: 60px;
+    height: 40px;
+}
+
+.imgFooterFace {
+    height: 50px;
 }
 
 /* .categoriasImg {
@@ -311,36 +327,50 @@ li {
 @media (max-width:768px) {
 
     .contenedorSection {
-        
-        grid-template-columns: 1fr 1fr   ;
-    
+
+        grid-template-columns: 1fr 1fr;
+
     }
 }
 
 @media (max-width:500px) {
 
     .contenedorSection {
-        
-        grid-template-columns: 1fr ;
-    
+
+        grid-template-columns: 1fr;
+
     }
 }
 
 /* RESPONSIVE Tiendas*/
 
 
-@media (max-width:500px){
+@media (max-width:500px) {
     .divPickup img {
         display: none;
 
-    } 
+    }
 }
 
-/* RESPONSIVE Formulario */
 
-@media (max-width:768px) {
-    form {
+
+/* RESPONSIVE Footer */
+
+@media (max-width:1200px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:770px) {
+    footer {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .divFooter {
+        display: none;
+    }
+
 }
