@@ -1,0 +1,39 @@
+/* ESTILO FOOTER */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 5px solid gold;
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(240, 237, 237);
+  }
+  
+  .divFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 5px;
+  }
+  
+  li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  
+  .footerLi li {
+    display: inline-block;
+  }
+  
+  /* redes sociales */
+  
+  .imgFooter {
+    height: 40px;
+  }
+  
+  .imgFooterFace {
+    height: 50px;
+  }
+  
+ 
+  

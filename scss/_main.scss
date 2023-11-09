@@ -1,4 +1,6 @@
-.estiloTitulos, .tituloH1 {
+// MIXIN  //
+
+@mixin estiloTitulos {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -6,61 +8,27 @@
   padding: 50px;
 }
 
-.estiloTitulosContacto, .divApp, .divTituloFormulario, .tituloTiendas {
-  padding: 20px;
-  margin-top: 150px;
-  margin-bottom: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* header */
-.logo {
-  width: 100px;
-}
-
-.header {
-  border-top: 10px solid gold;
-  background-color: gainsboro;
-}
-
-.fuentesNav {
-  font-size: 15px;
+@mixin precios {
   font-weight: bold;
-  text-transform: uppercase;
-}
-
-.carrito {
-  width: 40px;
-  border-radius: 10px;
-}
-
-.fuentesNav a:hover {
-  background-color: gold;
-}
-
-button {
-  background-image: linear-gradient(to right, rgb(235, 214, 98), gold);
-  padding: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  border: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.2rem;
+  color: goldenrod;
 }
 
 /* Main */
+
 /* Banner home */
+
 .carousel {
   margin-top: 130px;
 }
 
 .tituloH1 {
-  background-color: rgb(217, 247, 237);
+  background-color: $colorSpoiler;
+  @extend .estiloTitulos;
 }
 
+
 /* Categorias */
+
 .contenedorSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -78,6 +46,7 @@ button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .categoriasImg {
   width: 100%;
   height: 250px;
@@ -87,6 +56,7 @@ button {
   cursor: pointer;
 }
 
+
 .categoriasP {
   font-size: 1.5rem;
   font-weight: bold;
@@ -95,22 +65,19 @@ button {
 }
 
 .precios {
-  font-weight: bold;
-  color: goldenrod;
+  @include precios;
 }
 
 /* DESAYUNOS Y MERIENDAS */
+
 .sectionH2 {
-  background-color: rgb(217, 247, 237);
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 2rem;
-  padding: 50px;
+  background-color: $colorSpoiler ;
+  @include estiloTitulos;
+
 }
 
 .sectionH3 {
-  background-color: #784212;
+  background-color: $colorCategoriasPromo;
   color: #fff;
   text-align: center;
   font-weight: bold;
@@ -119,8 +86,9 @@ button {
 }
 
 /* ALMUERZO Y CENAS */
+
 .divAlmuerzo {
-  background-color: rgb(217, 247, 237);
+  background-color: $colorSpoiler;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -129,7 +97,7 @@ button {
 }
 
 .divTumomento {
-  background-color: rgb(217, 247, 237);
+  background-color: $colorSpoiler;
   color: #fff;
   text-align: center;
   font-weight: bold;
@@ -138,14 +106,18 @@ button {
 }
 
 /* iframe */
+
 iframe {
   display: block;
   margin: auto;
 }
 
 /* Estilo Tiendas*/
+
 .tituloTiendas {
-  background-color: gold;
+  @extend .estiloTitulosContacto;
+  background-color: $titulosContacto;
+
 }
 
 .divLocales {
@@ -192,8 +164,10 @@ span {
 }
 
 /* Estilo Formulario */
+
 .divTituloFormulario {
-  background-color: gold;
+  @extend .estiloTitulosContacto;
+  background-color: $titulosContacto;
   text-transform: uppercase;
 }
 
@@ -204,11 +178,12 @@ span {
   border: 3px solid black;
   margin: 50px;
   padding: 0px;
+
 }
 
 .tituloFormulario {
   text-align: center;
-  background-color: gold;
+  background-color: $titulosContacto;
   padding: 10px;
 }
 
@@ -222,6 +197,7 @@ form {
   display: flex;
   flex-direction: column;
 }
+
 
 label {
   font-weight: bold;
@@ -238,6 +214,8 @@ input {
   margin-bottom: 10px;
 }
 
+
+
 .olvido {
   display: flex;
   justify-content: space-around;
@@ -253,12 +231,14 @@ input {
   font-size: 18px;
   cursor: pointer;
   margin-top: 20px;
-  width: 100%;
+  width: 100%
 }
 
 /* ESTILO NUESTRA APP */
+
 .divApp {
-  background-color: gold;
+  @extend .estiloTitulosContacto;
+  background-color: $titulosContacto;
   border-bottom: 5px solid gray;
 }
 
@@ -268,74 +248,3 @@ input {
   bottom: 20px;
   right: 20px;
 }
-
-/* ESTILO FOOTER */
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  border-top: 5px solid gold;
-  text-align: center;
-  margin-top: 30px;
-  background-color: rgb(240, 237, 237);
-}
-
-.divFooter {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  margin-top: 5px;
-}
-
-li {
-  list-style-type: none;
-  cursor: pointer;
-}
-
-.footerLi li {
-  display: inline-block;
-}
-
-/* redes sociales */
-.imgFooter {
-  height: 40px;
-}
-
-.imgFooterFace {
-  height: 50px;
-}
-
-/* RESPONSIVE home Categorias*/
-@media (max-width: 768px) {
-  .contenedorSection {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 500px) {
-  .contenedorSection {
-    grid-template-columns: 1fr;
-  }
-}
-/* RESPONSIVE Tiendas*/
-@media (max-width: 500px) {
-  .divPickup img {
-    display: none;
-  }
-}
-/* RESPONSIVE Footer */
-@media (max-width: 1200px) {
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 770px) {
-  footer {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .divFooter {
-    display: none;
-  }
-}
-
-/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,45 @@
+/* RESPONSIVE home Categorias*/
+
+@media (max-width: 768px) {
+  .contenedorSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .contenedorSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* RESPONSIVE Tiendas*/
+
+@media (max-width: 500px) {
+  .divPickup img {
+    display: none;
+  }
+}
+
+
+
+/* RESPONSIVE Footer */
+
+@media (max-width: 1200px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 770px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .divFooter {
+    display: none;
+  }
+}
