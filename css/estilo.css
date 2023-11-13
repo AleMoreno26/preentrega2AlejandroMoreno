@@ -50,7 +50,7 @@ button {
   font-size: 1.2rem;
 }
 
-/* Main */
+/* Home */
 /* Banner home */
 .carousel {
   margin-top: 130px;
@@ -60,12 +60,34 @@ button {
   background-color: rgb(217, 247, 237);
 }
 
+.textoCentral {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  max-width: 50%;
+  text-align: center;
+}
+
+.textoCentral {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
 /* Categorias */
 .contenedorSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   padding: 20px;
+}
+
+.contenedorLomasvendido {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .contenedorCategorias {
@@ -202,7 +224,7 @@ span {
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid black;
-  margin: 50px;
+  margin: 80px;
   padding: 0px;
 }
 
@@ -248,7 +270,7 @@ input {
 .boton {
   background-color: gold;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 60px;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
@@ -263,47 +285,56 @@ input {
 }
 
 .Whastapp {
-  width: 70px;
+  width: 50px;
   position: fixed;
   bottom: 20px;
   right: 20px;
 }
 
 /* ESTILO FOOTER */
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.footer {
   border-top: 5px solid gold;
   text-align: center;
-  margin-top: 30px;
   background-color: rgb(240, 237, 237);
 }
 
-.divFooter {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  margin-top: 5px;
+ul li {
+  list-style: none;
 }
 
-li {
-  list-style-type: none;
+.footerContenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.divRedesSociales i {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px;
   cursor: pointer;
 }
 
-.footerLi li {
+.divRedesSociales ul li {
   display: inline-block;
 }
 
+.divFooterAyuda ul {
+  padding: 0px;
+  margin: 5px 0;
+}
+
+.divFooterAyuda li:hover {
+  color: gold;
+}
+
 /* redes sociales */
-.imgFooter {
-  height: 40px;
-}
-
-.imgFooterFace {
-  height: 50px;
-}
-
 /* RESPONSIVE home Categorias*/
 @media (max-width: 768px) {
   .contenedorSection {
@@ -315,6 +346,17 @@ li {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 1000px) {
+  .contenedorLomasvendido {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .sectionH3,
+  .contenedorLomasvendido {
+    display: none;
+  }
+}
 /* RESPONSIVE Tiendas*/
 @media (max-width: 500px) {
   .divPickup img {
@@ -323,18 +365,15 @@ li {
 }
 /* RESPONSIVE Footer */
 @media (max-width: 1200px) {
-  footer {
+  .footerContenido {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 770px) {
-  footer {
+  .footerContenido {
     display: grid;
     grid-template-columns: 1fr;
-  }
-  .divFooter {
-    display: none;
   }
 }
 

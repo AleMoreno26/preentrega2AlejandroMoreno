@@ -13,7 +13,7 @@
   color: goldenrod;
 }
 
-/* Main */
+/* Home */
 
 /* Banner home */
 
@@ -27,6 +27,21 @@
 }
 
 
+.textoCentral {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7) ;
+  border-radius: 10px;
+  max-width: 50%;
+  text-align: center;
+}
+
+.textoCentral {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+
+
 /* Categorias */
 
 .contenedorSection {
@@ -36,6 +51,14 @@
   padding: 20px;
 }
 
+.contenedorLomasvendido{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
 .contenedorCategorias {
   display: flex;
   flex-direction: column;
@@ -55,6 +78,7 @@
   object-fit: contain;
   cursor: pointer;
 }
+
 
 
 .categoriasP {
@@ -176,7 +200,7 @@ span {
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid black;
-  margin: 50px;
+  margin: 80px;
   padding: 0px;
 
 }
@@ -226,7 +250,7 @@ input {
 .boton {
   background-color: gold;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 60px;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
@@ -243,7 +267,7 @@ input {
 }
 
 .Whastapp {
-  width: 70px;
+  width: 50px;
   position: fixed;
   bottom: 20px;
   right: 20px;
