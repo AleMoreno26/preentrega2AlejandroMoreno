@@ -18,7 +18,7 @@
 /* Banner home */
 
 .carousel {
-  margin-top: 130px;
+  margin-top: 89px;
 }
 
 .tituloH1 {
@@ -29,17 +29,13 @@
 
 .textoCentral {
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7) ;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   max-width: 50%;
   text-align: center;
-}
-
-.textoCentral {
   font-size: 4rem;
   text-transform: uppercase;
 }
-
 
 
 /* Categorias */
@@ -51,7 +47,7 @@
   padding: 20px;
 }
 
-.contenedorLomasvendido{
+.contenedorLomasvendido {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
@@ -59,6 +55,7 @@
   margin-left: 200px;
   margin-right: 200px;
 }
+
 .contenedorCategorias {
   display: flex;
   flex-direction: column;
@@ -200,7 +197,7 @@ span {
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid black;
-  margin: 80px;
+  margin: 40px;
   padding: 0px;
 
 }
@@ -243,6 +240,7 @@ input {
 .olvido {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -264,6 +262,7 @@ input {
   @extend .estiloTitulosContacto;
   background-color: $titulosContacto;
   border-bottom: 5px solid gray;
+  margin: 20px;
 }
 
 .Whastapp {

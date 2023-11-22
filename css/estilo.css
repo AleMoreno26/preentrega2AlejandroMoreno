@@ -53,7 +53,7 @@ button {
 /* Home */
 /* Banner home */
 .carousel {
-  margin-top: 130px;
+  margin-top: 89px;
 }
 
 .tituloH1 {
@@ -66,9 +66,6 @@ button {
   border-radius: 10px;
   max-width: 50%;
   text-align: center;
-}
-
-.textoCentral {
   font-size: 4rem;
   text-transform: uppercase;
 }
@@ -224,7 +221,7 @@ span {
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid black;
-  margin: 80px;
+  margin: 40px;
   padding: 0px;
 }
 
@@ -263,6 +260,7 @@ input {
 .olvido {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -282,6 +280,7 @@ input {
 .divApp {
   background-color: gold;
   border-bottom: 5px solid gray;
+  margin: 20px;
 }
 
 .Whastapp {
@@ -336,17 +335,20 @@ ul li {
 
 /* redes sociales */
 /* RESPONSIVE home Categorias*/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .contenedorSection {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 500px) {
-  .contenedorSection {
+  .contenedorSection,
+  .tituloH1 {
     grid-template-columns: 1fr;
+    font-size: 1.5rem;
+    padding: 20px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .contenedorLomasvendido {
     grid-template-columns: 1fr 1fr;
   }
