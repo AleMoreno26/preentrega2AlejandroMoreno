@@ -1,53 +1,66 @@
-/* ESTILO FOOTER */
-
 .footer {
   border-top: 5px solid gold;
-  text-align: center;
   background-color: rgb(240, 237, 237);
+  padding: 20px;
+}
+
+.footerContenido {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
 }
 
 ul li {
   list-style: none;
 }
 
-
-.footerContenido {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 30px;
-}
-
 .footer h3 {
-font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 5px;
+  text-decoration: underline;
+  text-align: center;
+
 }
 
 .divRedesSociales i {
-
-  font-size: 1.5rem;
+  color: black;
+  font-size: 2rem;
   text-decoration: none;
+  list-style: none;
   margin: 5px;
   padding: 10px;
-  cursor: pointer;  
+  cursor: pointer;
 }
-
 
 .divRedesSociales ul li {
   display: inline-block;
 
-} 
-
-
-
-.divFooterAyuda ul {
-padding: 0px;
-margin: 5px 0;
 }
 
+.divRedesSociales ul {
+  padding: 0px;
+}
+
+.divFooterNosotros a {
+  font-weight: bold;
+  font-size: 1.1rem;
+  @include anclas
+
+}
+
+.divFooterAyuda ul {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
 
 .divFooterAyuda li:hover {
   color: gold;
 }
 
+.divFooterNosotros li a:hover {
+  color: gold;
+}
 
-/* redes sociales */
+.divRedesSociales i:hover {
+  color: gold;
+}

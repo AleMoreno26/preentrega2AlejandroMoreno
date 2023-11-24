@@ -45,15 +45,14 @@
 /* RESPONSIVE Footer */
 
 @media (max-width: 1200px) {
-  .footerContenido {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .divFooterNosotros {
+    display: none;
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 540px) {
   .footerContenido {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
   }
-}
+} 
